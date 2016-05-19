@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>css3+js+html5实现七夕情缘</title>
+  <meta name="description" content="这是使用css3+js+html5实现的七夕情缘">
+  <meta name="keywords" content="css3,js+html5">
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/pageA.css" rel="stylesheet">
+  <link href="./css/pageB.css" rel="stylesheet">
+  <link href="./css/pageC.css" rel="stylesheet"></head>
+<body>
+  <section class='container'>
+    <!-- 第一副画面 -->
+    <section class="page-a  bg-adaptive">
+      <!-- 月亮 -->
+      <figure class='moon'></figure>
+      <!-- 圣诞树 -->
+      <figure class="tree"></figure>
+      <!-- 云 -->
+      <figure class="cloudy1"></figure>
+      <figure class="cloudy2"></figure>
+      <!-- 男孩 -->
+      <div class="chs-boy  chs-boy-deer"></div>
+      <!-- 窗户 -->
+      <div class="window  wood">
+        <div class="window-bg"></div>
+        <div class="window-content">
+          <div class="window-left"></div>
+          <div class="window-right"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 第二幅画面 -->
+    <section class="page-b  bg-adaptive">
+      <!-- 猫 -->
+      <figure class="cat"></figure>
+      <!-- 小女孩-->
+      <figure class="girl "></figure>
+      <!-- 圣诞男孩 -->
+      <figure class="christmas-boy-head"></figure>
+      <figure class="christmas-boy  boy-walk"></figure>
+      <!-- 旋转木马 -->
+      <div id="carousel">
+        <figure id="spinner"></figure>
+      </div>
+    </section>
+    <!-- 第三幅画面 -->
+    <section class="page-c  bg-adaptive">
+        <!-- 窗户关闭 -->
+         <div class="c_window c_wood">
+                <div class="c_window-content">
+                   <div class="c_window-scene-bg"></div>
+                    <div class="c_window-close-bg"></div>
+                    <div class="c_window-left hover"></div>
+                    <div class="c_window-right hover"></div>
+                </div>
+         </div>
+         <!-- 雪花 -->
+         <canvas id='snowflake'></canvas>
+         <!-- 小男孩的车 -->
+         <figure class="car"></figure>
+  </section>
+</body>
+  <script src='./js/jquery.js'></script>
+  <script src='./js/transition.js'></script>
+  <script src="./js/pageA.js"></script>
+  <script src="./js/pageB.js"></script>
+  <script src="./js/pageC.js"></script>
+  <script src='./js/observer.js'></script>
+  <script src='./js/common.js'></script>
+  <script src='./js/carousel.js'></script>
+  <script src='./js/snowflake.js'></script>
+</html>
